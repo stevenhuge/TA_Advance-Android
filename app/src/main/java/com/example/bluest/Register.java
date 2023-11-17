@@ -102,6 +102,7 @@ public class Register extends AppCompatActivity {
         loginByCredential(credential);
     }
 
+
     private void loginByCredential(PhoneAuthCredential credential) {
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         firebaseAuth.signInWithCredential(credential)
