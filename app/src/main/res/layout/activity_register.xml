@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="20dp"
+         android:fontFamily="@font/poppins"
+         android:gravity="center"
+         android:text="Register"
+         android:textColor="@color/black"
+         android:textSize="28sp"
+         android:textStyle="bold" />
+
+
+     <!--    Username disini -->
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="20dp"
+         android:fontFamily="@font/poppins"
+         android:text="Username"
+         android:textColor="@color/black"
+         android:textSize="20sp"
+         android:textStyle="bold" />
+
+     <EditText
+         android:id="@+id/etUsername"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="20dp"
+         android:fontFamily="@font/poppins"
+         android:hint="Username"
+         android:drawableStart="@drawable/baseline_person_24"
+         android:drawablePadding="10dp"
+         android:layout_gravity="center"
+         android:textColor="@color/black"
+         android:textSize="20sp"
+         android:textStyle="bold" />
+
+     <!--    Nomer Handphone disini -->
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="20dp"
+         android:fontFamily="@font/poppins"
+         android:text="Nomor Telepon"
+         android:textColor="@color/black"
+         android:textSize="20sp"
+         android:textStyle="bold" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+         <TextView
+             android:layout_width="100dp"
+             android:layout_height="match_parent"
+             android:layout_marginStart="20dp"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:fontFamily="@font/poppins"
+             android:text="+62"
+             android:textColor="@color/black"
+             android:textSize="20sp"
+             android:textStyle="bold" />
+
+         <EditText
+             android:id="@+id/etNumberphone"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="20dp"
+             android:fontFamily="@font/poppins"
+             android:inputType="number"
+             android:hint="Nomor Telepon"
+             android:layout_weight="1"
+             android:drawableStart="@drawable/baseline_call_24"
+             android:drawablePadding="10dp"
+             android:layout_gravity="center"
+             android:textColor="@color/black"
+             android:textSize="20sp"
+             android:textStyle="bold" />
+
+     </LinearLayout>
+
+     <!--    Password disini -->
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="20dp"
+         android:fontFamily="@font/poppins"
+         android:text="Password"
+         android:textColor="@color/black"
+         android:textSize="20sp"
+         android:textStyle="bold" />
+
+     <EditText
+         android:id="@+id/etPassword"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="20dp"
+         android:fontFamily="@font/poppins"
+         android:inputType="textPassword"
+         android:hint="Password"
+         android:drawableStart="@drawable/baseline_lock_24"
+         android:drawablePadding="10dp"
+         android:layout_gravity="center"
+         android:textColor="@color/black"
+         android:textSize="20sp"
+         android:textStyle="bold" />
+
+     <Button
+         android:id="@+id/btnRegister"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:backgroundTint="@color/black"
+         android:layout_marginHorizontal="20dp"
+         android:layout_marginTop="20dp"
+         android:layout_marginBottom="10dp"
+         android:text="REGISTER"/>
+
+     <Button
+         android:id="@+id/btnKembali"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:backgroundTint="@color/black"
+         android:layout_marginHorizontal="20dp"
+         android:layout_marginBottom="10dp"
+         android:text="KEMBALI"/>
+     
+     <ProgressBar
+         android:id="@+id/bar"
+         android:visibility="invisible"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         />
+
+     <LinearLayout
+         android:id="@+id/layoutOTP"
+         android:visibility="gone"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="20dp"
+             android:fontFamily="@font/poppins"
+             android:gravity="center"
+             android:text="Verifikasi Kode OTP"
+             android:textColor="@color/black"
+             android:textSize="28sp"
+             android:textStyle="bold" />
+
+
+         <!--    Username disini -->
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="20dp"
+             android:layout_marginEnd="20dp"
+             android:fontFamily="@font/poppins"
+             android:text="Kode OTP"
+             android:textColor="@color/black"
+             android:textSize="20sp"
+             android:textStyle="bold" />
+
+         <EditText
+             android:id="@+id/etCodeOTP"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="20dp"
+             android:layout_marginEnd="20dp"
+             android:fontFamily="@font/poppins"
+             android:hint="Masukkan Kode OTP"
+             android:drawableStart="@drawable/baseline_person_24"
+             android:drawablePadding="10dp"
+             android:layout_gravity="center"
+             android:textColor="@color/black"
+             android:textSize="20sp"
+             android:textStyle="bold" />
+
+         <Button
+             android:id="@+id/btnVeriffication"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:backgroundTint="@color/black"
+             android:layout_marginHorizontal="20dp"
+             android:layout_marginBottom="10dp"
+             android:text="VERIFIKASI"/>
+
+     </LinearLayout>
+     
+ </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "801489694254",
+    "project_id": "ta-advance",
+    "storage_bucket": "ta-advance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801489694254:android:55c20ff877d04f978639bf",
+        "android_client_info": {
+          "package_name": "com.example.bluest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4x2zMrQ7j_rXreHc_aLrisMbnXtJCkL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
